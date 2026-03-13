@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-playfair), serif;
+  --font-body: var(--font-inter), sans-serif;
+  
+  --color-background: #FAFAFA;
+  --color-foreground: #111111;
+  --color-secondary: #6B6B6B;
+  --color-border: #EAEAEA;
+  --color-accent: #C6A969;
+}
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #111111;
+  --secondary: #6B6B6B;
+  --border: #EAEAEA;
+  --accent: #C6A969;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
