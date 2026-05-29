@@ -6,58 +6,128 @@ interface ProjectCardProps {
   title: string;
   category: string;
   description: string;
-  image: string;
+  image?: string;
+  imageClassName?: string;
+  imageWrapperClassName?: string;
   tags: string[];
+  liveUrl?: string;
+  repoUrl?: string;
 }
 
-export const ProjectCard = ({ title, category, description, image, tags }: ProjectCardProps) => {
+const actionButtonClassName =
+  "inline-flex items-center justify-center gap-2 border border-border px-4 py-3 text-[11px] font-medium uppercase tracking-[0.18em] text-foreground transition-all duration-300 hover:border-foreground hover:bg-foreground hover:text-background";
+
+export const ProjectCard = ({
+  title,
+  category,
+  description,
+  image,
+  imageClassName,
+  imageWrapperClassName,
+  tags,
+  liveUrl,
+  repoUrl,
+}: ProjectCardProps) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="group relative overflow-hidden"
-    >
-      <div className="aspect-[4/5] md:aspect-square overflow-hidden bg-border relative">
-        <motion.img
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
-        />
-        <div className="absolute inset-0 bg-foreground/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      </div>
-      
-      <div className="pt-8">
-        <div className="flex justify-between items-start mb-4">
-          <div>
-            <p className="text-[10px] uppercase tracking-[0.3em] text-accent font-bold mb-2">
-              {category}
-            </p>
-            <h3 className="text-3xl font-heading mb-3">{title}</h3>
+    <motion.article initial={false} className="group relative flex h-full flex-col overflow-hidden">
+      <div className={`relative aspect-[4/5] overflow-hidden bg-border md:aspect-square ${imageWrapperClassName ?? ""}`}>
+        {image ? (
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            src={image}
+            alt={title}
+            className={`h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 ${imageClassName ?? ""}`}
+          />
+        ) : (
+          <div className="flex h-full w-full items-end bg-gradient-to-br from-[#191919] via-[#2A2A2A] to-[#4A4A4A] p-6">
+            <div>
+              <p className="mb-2 text-[10px] uppercase tracking-[0.3em] text-white/60">{category}</p>
+              <h3 className="max-w-[12ch] text-3xl text-white font-heading">{title}</h3>
+            </div>
           </div>
-          <div className="flex gap-4">
-            <button className="text-secondary hover:text-accent transition-colors">
-              <Github size={18} />
-            </button>
-            <button className="text-secondary hover:text-accent transition-colors">
-              <ExternalLink size={18} />
-            </button>
+        )}
+        <div className="absolute inset-0 bg-foreground/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      </div>
+
+      <div className="flex flex-1 flex-col pt-8">
+        <div className="mb-4 flex items-start justify-between gap-6">
+          <div>
+            <p className="mb-2 text-[10px] font-bold uppercase tracking-[0.3em] text-accent">{category}</p>
+            <h3 className="mb-3 text-3xl font-heading">{title}</h3>
+          </div>
+          <div className="flex shrink-0 gap-4">
+            {repoUrl ? (
+              <a
+                href={repoUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${title} GitHub repository`}
+                className="text-secondary transition-colors hover:text-accent"
+              >
+                <Github size={18} />
+              </a>
+            ) : (
+              <span aria-hidden="true" className="text-secondary/30">
+                <Github size={18} />
+              </span>
+            )}
+            {liveUrl ? (
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${title} live project`}
+                className="text-secondary transition-colors hover:text-accent"
+              >
+                <ExternalLink size={18} />
+              </a>
+            ) : (
+              <span aria-hidden="true" className="text-secondary/30">
+                <ExternalLink size={18} />
+              </span>
+            )}
           </div>
         </div>
-        
-        <p className="text-secondary mb-6 line-clamp-2">{description}</p>
-        
-        <div className="flex flex-wrap gap-x-6 gap-y-2">
+
+        <p className="mb-6 line-clamp-3 text-secondary">{description}</p>
+
+        <div className="mb-8 flex flex-wrap gap-3">
           {tags.map((tag) => (
-            <span key={tag} className="text-[11px] uppercase tracking-widest text-secondary/60">
+            <span
+              key={tag}
+              className="rounded-full border border-border bg-background px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-secondary"
+            >
               {tag}
             </span>
           ))}
         </div>
+
+        <div className="mt-auto flex flex-wrap gap-3">
+          {liveUrl ? (
+            <a href={liveUrl} target="_blank" rel="noreferrer" className={actionButtonClassName}>
+              <ExternalLink size={14} />
+              Live Demo
+            </a>
+          ) : (
+            <span className={`${actionButtonClassName} cursor-not-allowed border-dashed text-secondary/50 hover:bg-transparent hover:text-secondary/50`}>
+              <ExternalLink size={14} />
+              Live Demo
+            </span>
+          )}
+          {repoUrl ? (
+            <a href={repoUrl} target="_blank" rel="noreferrer" className={actionButtonClassName}>
+              <Github size={14} />
+              GitHub
+            </a>
+          ) : (
+            <span className={`${actionButtonClassName} cursor-not-allowed border-dashed text-secondary/50 hover:bg-transparent hover:text-secondary/50`}>
+              <Github size={14} />
+              GitHub
+            </span>
+          )}
+        </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };

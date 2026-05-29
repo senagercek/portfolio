@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactStrictMode: true,
-  // @ts-ignore
+  experimental: {
+    turbopackUseSystemTlsCerts: true,
+  },
   turbopack: {
-    root: ".",
+    root: process.cwd(),
   },
 };
 

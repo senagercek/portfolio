@@ -1,0 +1,55 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1200" fill="#ECE1D4"/>
+  <circle cx="1038" cy="182" r="148" fill="#F2E7DA"/>
+  <g filter="url(#shadowBurger)">
+    <rect x="76" y="144" width="1048" height="838" rx="36" fill="#FBF7F2"/>
+    <rect x="76" y="144" width="1048" height="58" rx="36" fill="#EEE3D5"/>
+    <circle cx="116" cy="173" r="7" fill="#DFA8A0"/>
+    <circle cx="142" cy="173" r="7" fill="#E1CC8E"/>
+    <circle cx="168" cy="173" r="7" fill="#B7CEAE"/>
+    <rect x="346" y="164" width="510" height="18" rx="9" fill="#D5CCBE"/>
+  </g>
+  <g filter="url(#shadowBurger)">
+    <rect x="112" y="236" width="976" height="282" rx="28" fill="#15110F"/>
+    <rect x="688" y="236" width="400" height="282" rx="0" fill="url(#burgerGlow)"/>
+    <ellipse cx="878" cy="372" rx="128" ry="52" fill="#F2C775"/>
+    <ellipse cx="878" cy="390" rx="124" ry="30" fill="#C77235"/>
+    <ellipse cx="878" cy="416" rx="118" ry="28" fill="#92502A"/>
+    <ellipse cx="878" cy="440" rx="126" ry="38" fill="#D89A4F"/>
+    <text x="154" y="286" fill="#E7C98E" font-family="Arial, sans-serif" font-size="18" font-weight="700">SMASH BURGER</text>
+    <text x="154" y="372" fill="#FFFFFF" font-family="Georgia, serif" font-size="68">Crafted burgers</text>
+    <text x="154" y="448" fill="#FFFFFF" font-family="Georgia, serif" font-size="68">with bold flavour</text>
+    <text x="154" y="494" fill="#CBB8A6" font-family="Arial, sans-serif" font-size="22">A restaurant website concept designed around menu discovery, signature products, and fast booking or order actions.</text>
+  </g>
+  <g filter="url(#shadowBurger)">
+    <rect x="112" y="554" width="976" height="392" rx="28" fill="#FCFAF7"/>
+    <rect x="148" y="590" width="286" height="320" rx="24" fill="#FFFDF8"/>
+    <rect x="456" y="590" width="286" height="320" rx="24" fill="#FFFDF8"/>
+    <rect x="764" y="590" width="288" height="320" rx="24" fill="#FFFDF8"/>
+    <ellipse cx="291" cy="680" rx="78" ry="42" fill="#D48C48"/>
+    <ellipse cx="291" cy="696" rx="76" ry="24" fill="#B5622E"/>
+    <ellipse cx="599" cy="680" rx="78" ry="42" fill="#D48C48"/>
+    <ellipse cx="907" cy="680" rx="78" ry="42" fill="#D48C48"/>
+    <text x="164" y="804" fill="#17120F" font-family="Georgia, serif" font-size="30">Signature products</text>
+    <text x="164" y="840" fill="#7B726B" font-family="Arial, sans-serif" font-size="18">Visual focus on hero items and quick menu browsing</text>
+    <text x="472" y="804" fill="#17120F" font-family="Georgia, serif" font-size="30">Menu sections</text>
+    <text x="472" y="840" fill="#7B726B" font-family="Arial, sans-serif" font-size="18">Structured categories for burgers, sides and drinks</text>
+    <text x="780" y="804" fill="#17120F" font-family="Georgia, serif" font-size="30">Booking CTA</text>
+    <text x="780" y="840" fill="#7B726B" font-family="Arial, sans-serif" font-size="18">Clear conversion path for reservations and orders</text>
+  </g>
+  <defs>
+    <linearGradient id="burgerGlow" x1="688" y1="236" x2="1088" y2="518" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#322118"/>
+      <stop offset="1" stop-color="#764521"/>
+    </linearGradient>
+    <filter id="shadowBurger" x="44" y="122" width="1112" height="868" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.17 0 0 0 0 0.14 0 0 0 0 0.12 0 0 0 0.16 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -15,23 +15,20 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 md:py-40">
       <Container>
-        <div className="grid md:grid-cols-2 gap-20">
+        <div className="grid gap-20 md:grid-cols-2">
           <div>
-            <SectionTitle
-              subtitle="Let's build something"
-              title="Work together."
-            />
+            <SectionTitle subtitle="Contact" title="Let's work together." />
             <motion.p
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="text-xl text-secondary mt-12 max-w-sm"
+              className="mt-12 max-w-md text-xl leading-relaxed text-secondary"
             >
-              Interested in a project or just want to say hi? Feel free to reach out through any of these channels.
+              Available for freelance projects, collaborations, and junior frontend developer opportunities. If you are looking for a developer who values clean UI and thoughtful execution, feel free to get in touch.
             </motion.p>
           </div>
-          
+
           <div className="space-y-12">
             {contactInfo.map((info, index) => (
               <motion.div
@@ -41,14 +38,14 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="flex items-center gap-6 group">
-                  <div className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-secondary group-hover:border-accent group-hover:text-accent transition-all duration-300">
+                <div className="group flex items-center gap-6">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-border text-secondary transition-all duration-300 group-hover:border-accent group-hover:text-accent">
                     {info.icon}
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-widest text-secondary/60 mb-1">{info.label}</p>
+                    <p className="mb-1 text-[10px] uppercase tracking-widest text-secondary/60">{info.label}</p>
                     {info.href ? (
-                      <a href={info.href} target="_blank" rel="noopener noreferrer" className="text-xl group-hover:text-accent transition-colors">
+                      <a href={info.href} target="_blank" rel="noopener noreferrer" className="text-xl transition-colors group-hover:text-accent">
                         {info.value}
                       </a>
                     ) : (

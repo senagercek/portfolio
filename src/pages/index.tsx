@@ -13,14 +13,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Senanur Gerçek | Frontend Developer & Digital Experience Creator</title>
-        <meta name="description" content="Premium luxury frontend portfolio of Senanur Gerçek. Crafting elegant web interfaces with Next.js and Tailwind." />
+        <title>Senanur Gercek | Frontend Developer & UI-Focused Web Designer</title>
+        <meta
+          name="description"
+          content="Frontend developer portfolio focused on responsive UI, clean web interfaces, and modern frontend development with React, Next.js, and Tailwind CSS."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      
+
       <main>
         <Hero />
         <About />
@@ -30,7 +33,7 @@ export default function Home() {
         <Learning />
         <Contact />
       </main>
-      
+
       <Footer />
     </>
   );

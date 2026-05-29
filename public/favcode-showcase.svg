@@ -1,0 +1,73 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1200" fill="#EAE2D7"/>
+  <circle cx="1040" cy="150" r="170" fill="#F3ECE2"/>
+  <g filter="url(#shadowFav)">
+    <rect x="72" y="134" width="1056" height="844" rx="36" fill="#111827"/>
+    <rect x="72" y="134" width="1056" height="58" rx="36" fill="#1A2436"/>
+    <circle cx="112" cy="163" r="7" fill="#DFA8A0"/>
+    <circle cx="138" cy="163" r="7" fill="#E1CC8E"/>
+    <circle cx="164" cy="163" r="7" fill="#B7CEAE"/>
+    <rect x="342" y="154" width="514" height="18" rx="9" fill="#314057"/>
+  </g>
+  <g filter="url(#shadowFav)">
+    <rect x="108" y="222" width="984" height="714" rx="30" fill="url(#favHero)"/>
+    <rect x="108" y="222" width="984" height="96" rx="30" fill="rgba(10,14,22,0.22)"/>
+    <text x="146" y="282" fill="#F3EEE6" font-family="Georgia, serif" font-size="34">FavCode</text>
+    <text x="584" y="282" fill="#D6D9E0" font-family="Arial, sans-serif" font-size="17">Services</text>
+    <text x="686" y="282" fill="#D6D9E0" font-family="Arial, sans-serif" font-size="17">Portfolio</text>
+    <text x="794" y="282" fill="#D6D9E0" font-family="Arial, sans-serif" font-size="17">About</text>
+    <text x="884" y="282" fill="#D6D9E0" font-family="Arial, sans-serif" font-size="17">Contact</text>
+    <rect x="940" y="252" width="126" height="36" rx="18" fill="#E8C688"/>
+    <text x="970" y="275" fill="#171717" font-family="Arial, sans-serif" font-size="14" font-weight="700">START</text>
+    <text x="146" y="406" fill="#FFFFFF" font-family="Georgia, serif" font-size="66">Digital products</text>
+    <text x="146" y="480" fill="#FFFFFF" font-family="Georgia, serif" font-size="66">with refined UI</text>
+    <text x="146" y="540" fill="#D7DBE4" font-family="Arial, sans-serif" font-size="24">An agency website designed to present web and mobile services through a confident,</text>
+    <text x="146" y="572" fill="#D7DBE4" font-family="Arial, sans-serif" font-size="24">modern structure with polished brand sections and clear calls to action.</text>
+    <rect x="146" y="610" width="162" height="42" rx="21" fill="#E8C688"/>
+    <text x="182" y="637" fill="#171717" font-family="Arial, sans-serif" font-size="15" font-weight="700">VIEW WORK</text>
+    <g filter="url(#phoneFav)">
+      <rect x="810" y="366" width="214" height="466" rx="36" fill="#101521"/>
+      <rect x="822" y="378" width="190" height="442" rx="28" fill="#F8F7F3"/>
+      <rect x="878" y="390" width="78" height="8" rx="4" fill="#CDC7BE"/>
+      <rect x="846" y="434" width="142" height="108" rx="18" fill="#E7EEF7"/>
+      <rect x="846" y="562" width="142" height="62" rx="18" fill="#151B27"/>
+      <rect x="846" y="646" width="64" height="84" rx="16" fill="#F2E4C2"/>
+      <rect x="924" y="646" width="64" height="84" rx="16" fill="#DBE4F1"/>
+      <text x="866" y="601" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="700">Book a call</text>
+    </g>
+    <rect x="146" y="700" width="208" height="138" rx="22" fill="rgba(255,255,255,0.1)"/>
+    <rect x="376" y="700" width="208" height="138" rx="22" fill="rgba(255,255,255,0.1)"/>
+    <rect x="606" y="700" width="208" height="138" rx="22" fill="rgba(255,255,255,0.1)"/>
+    <text x="174" y="750" fill="#F3EEE6" font-family="Georgia, serif" font-size="28">Websites</text>
+    <text x="404" y="750" fill="#F3EEE6" font-family="Georgia, serif" font-size="28">Mobile Apps</text>
+    <text x="634" y="750" fill="#F3EEE6" font-family="Georgia, serif" font-size="28">UI Systems</text>
+    <text x="174" y="788" fill="#D7DBE4" font-family="Arial, sans-serif" font-size="17">Clean business-facing experiences</text>
+    <text x="404" y="788" fill="#D7DBE4" font-family="Arial, sans-serif" font-size="17">Product interfaces for real use cases</text>
+    <text x="634" y="788" fill="#D7DBE4" font-family="Arial, sans-serif" font-size="17">Consistent visual language</text>
+  </g>
+  <defs>
+    <linearGradient id="favHero" x1="108" y1="222" x2="1092" y2="936" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182232"/>
+      <stop offset="0.58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#302731"/>
+    </linearGradient>
+    <filter id="shadowFav" x="40" y="112" width="1120" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.17 0 0 0 0 0.14 0 0 0 0 0.12 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_1" result="shape"/>
+    </filter>
+    <filter id="phoneFav" x="784" y="350" width="266" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="14"/>
+      <feGaussianBlur stdDeviation="13"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.15 0 0 0 0 0.13 0 0 0 0 0.12 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_2" result="shape"/>
+    </filter>
+  </defs>
+</svg>

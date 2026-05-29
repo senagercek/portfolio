@@ -5,20 +5,26 @@ import { SectionTitle } from "../components/SectionTitle";
 
 export const About = () => {
   const highlights = [
-    { title: "Frontend Development", description: "Building responsive and fast web applications." },
-    { title: "UI Design Thinking", description: "Designing interfaces that are both beautiful and functional." },
-    { title: "E-commerce Experiences", description: "Specialized in high-conversion digital storefronts." },
+    {
+      title: "React & Next.js Development",
+      description: "Building maintainable frontend interfaces with reusable components and modern development patterns.",
+    },
+    {
+      title: "Responsive UI Design",
+      description: "Creating polished layouts that stay consistent across mobile, tablet, and desktop screens.",
+    },
+    {
+      title: "User-Focused Experiences",
+      description: "Designing clean, intuitive interfaces that balance clarity, usability, and visual quality.",
+    },
   ];
 
   return (
     <section id="about" className="py-24 md:py-40">
       <Container>
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid items-center gap-16 md:grid-cols-2">
           <div>
-            <SectionTitle
-              subtitle="Minimal Manifesto"
-              title="I design and develop modern web experiences."
-            />
+            <SectionTitle subtitle="About Me" title="I design and build modern frontend experiences with a strong eye for UI." />
           </div>
           <div>
             <motion.p
@@ -26,11 +32,11 @@ export const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="text-lg text-secondary leading-relaxed mb-12"
+              className="mb-12 text-lg leading-relaxed text-secondary"
             >
-              Focused on the intersection of aesthetics and code. I believe in minimal design that speaks loudly through quality and performance.
+              I am a frontend developer focused on React and Next.js, with a strong interest in responsive design, clean interfaces, and user-focused digital products. I enjoy turning ideas into structured, elegant web experiences and continuously improving my skills with modern frontend technologies.
             </motion.p>
-            
+
             <div className="space-y-8">
               {highlights.map((item, index) => (
                 <motion.div
@@ -41,9 +47,9 @@ export const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="flex gap-4"
                 >
-                  <div className="w-1 h-full bg-accent mt-2" />
+                  <div className="mt-2 h-full w-1 bg-accent" />
                   <div>
-                    <h4 className="font-heading text-xl mb-1">{item.title}</h4>
+                    <h4 className="mb-1 text-xl font-heading">{item.title}</h4>
                     <p className="text-sm text-secondary">{item.description}</p>
                   </div>
                 </motion.div>

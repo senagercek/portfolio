@@ -7,19 +7,19 @@ export const Learning = () => {
     <section className="py-24 md:py-40">
       <Container>
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-            className="text-center max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+          className="mx-auto max-w-3xl text-center"
         >
-            <h4 className="text-sm uppercase tracking-[0.5em] text-accent font-bold mb-12">Vision</h4>
-            <h2 className="text-4xl md:text-5xl font-heading mb-12 leading-tight">
-                Frontend uzmanlığı + backend öğrenerek full-stack olma hedefi.
-            </h2>
-            <p className="text-xl text-secondary leading-relaxed">
-                Yeni teknolojiler ve ölçeklenebilir mimariler üzerine sürekli gelişim. Her projede daha temiz, daha hızlı ve daha etkileyici deneyimler yaratmak için çalışıyorum.
-            </p>
+          <h4 className="mb-12 text-sm font-bold uppercase tracking-[0.5em] text-accent">Growth Mindset</h4>
+          <h2 className="mb-12 text-4xl leading-tight font-heading md:text-5xl">
+            Growing as a frontend developer while expanding toward full-stack product development.
+          </h2>
+          <p className="text-xl leading-relaxed text-secondary">
+            I am continuously improving my knowledge of modern frontend tools, scalable architecture, and real-world product thinking to build cleaner, faster, and more effective digital experiences.
+          </p>
         </motion.div>
       </Container>
     </section>

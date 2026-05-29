@@ -15,7 +15,7 @@ export const Button = ({ children, variant = "primary", className, ...props }: B
   const variants = {
     primary: "bg-foreground text-background hover:bg-black",
     secondary: "bg-accent text-white hover:opacity-90",
-    outline: "bg-transparent border border-border text-foreground hover:bg-foreground hover:text-background",
+    outline: "bg-transparent border border-border text-foreground hover:border-foreground hover:bg-foreground hover:text-background",
   };
 
   return (
@@ -23,7 +23,7 @@ export const Button = ({ children, variant = "primary", className, ...props }: B
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       className={cn(
-        "px-8 py-4 text-sm font-medium transition-all duration-300",
+        "inline-flex items-center justify-center px-8 py-4 text-sm font-medium uppercase tracking-[0.08em] transition-all duration-300",
         variants[variant],
         className
       )}
