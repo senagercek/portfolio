@@ -29,7 +29,7 @@ export const Projects = () => {
       title: "Cebinex Financial Dashboard",
       category: "Fintech Solution",
       description: "A data-driven financial dashboard focused on portfolio visibility, transaction clarity, and accessible analytics through a polished interface system.",
-      image: "/cebinex.png",
+      image: "/cebinex-showcase-photoreal.png",
       liveUrl: "https://cebinex.com/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/cebinex-dashboard",
@@ -42,7 +42,7 @@ export const Projects = () => {
       title: "Gece Aperatif & Market",
       category: "Mobile Delivery App",
       description: "A mobile commerce application designed for fast ordering of late-night snacks, drinks, and market essentials with a simple category structure and frictionless checkout flow.",
-      image: "/gece-aperatif-market-showcase.svg",
+      image: "/gece-aperatif-market-showcase-premium.png",
       liveUrl: "https://geceaperatifmarket.com.tr",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/gece-aperatif-market",
@@ -52,7 +52,7 @@ export const Projects = () => {
       title: "FavCode",
       category: "Agency Website",
       description: "The website for my software agency, built to present web and mobile development services through a confident brand direction and a conversion-focused agency experience.",
-      image: "/favcode-showcase.svg",
+      image: "/favcode-showcase-photoreal.png",
       liveUrl: "https://favcode.com.tr/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/favcode",
@@ -62,8 +62,8 @@ export const Projects = () => {
       title: "Sepetim Gelsin",
       category: "Marketplace Platform",
       description: "A multi-surface marketplace concept for web and mobile, combining product discovery, promotional storefront sections, and a structured cart flow inspired by large-scale retail platforms.",
-      image: "/sepetim-gelsin-showcase.svg",
-      liveUrl: "https://sepetimgelsin.com/",
+      image: "/sepetim-gelsin-showcase-premium.png",
+      liveUrl: "https://sepetimgelsin.com.tr/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/sepetim-gelsin",
       tags: ["Web App", "Mobile App", "Marketplace", "E-Commerce"],
@@ -72,7 +72,7 @@ export const Projects = () => {
       title: "Smash Burger",
       category: "Restaurant Website",
       description: "A restaurant landing page concept developed to highlight signature menu items, support fast content scanning, and encourage ordering or booking actions through a bold visual layout.",
-      image: "/smash-burger-showcase.svg",
+      image: "/smash-burger-showcase-premium.png",
       liveUrl: "https://restaurant-template-ten-puce.vercel.app/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/smash-burger",
@@ -82,7 +82,7 @@ export const Projects = () => {
       title: "VIP Stones",
       category: "Fashion Website",
       description: "A premium textile and fashion storefront designed around elegant collection browsing, editorial product presentation, and a refined brand-first shopping experience.",
-      image: "/stone-vip-showcase.svg",
+      image: "/stone-vip-showcase-photoreal.png",
       liveUrl: "https://stone-vip.netlify.app/tr",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/vip-stones",
@@ -92,7 +92,7 @@ export const Projects = () => {
       title: "EMLAKJET",
       category: "Real Estate Website",
       description: "A real estate browsing experience focused on property discovery, filter clarity, and trust-building listing layouts for residential sales and rental journeys.",
-      image: "/emlak-showcase.svg",
+      image: "/emlak-showcase-photoreal.png",
       liveUrl: "https://emlak-sigma.vercel.app/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/emlakjet",
@@ -102,7 +102,7 @@ export const Projects = () => {
       title: "Sonus",
       category: "Music Magazine Website",
       description: "A digital magazine website crafted for music, culture, and editorial storytelling, with a strong hero structure, article discovery flow, and reading-focused layout.",
-      image: "/sonus-showcase.svg",
+      image: "/sonus-showcase-premium.png",
       liveUrl: "https://my-digital-haven.vercel.app/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/sonus",
@@ -112,7 +112,7 @@ export const Projects = () => {
       title: "My Digital Haven",
       category: "Personal Blog Website",
       description: "A calm and thoughtfully structured personal content website designed for blog publishing, curated sections, and a softer editorial tone across the browsing experience.",
-      image: "/digital-haven-showcase.svg",
+      image: "/digital-haven-showcase-premium.png",
       // TODO: Add the live demo URL for this project when available.
       // liveUrl: "https://your-live-demo-url.com",
       // TODO: Add the GitHub repository URL for this project.
@@ -120,10 +120,20 @@ export const Projects = () => {
       tags: ["Blog", "Lifestyle", "Editorial", "Personal Website"],
     },
     {
+      title: "Wapiuu",
+      category: "Messaging SaaS Platform",
+      description: "A WhatsApp API and automation platform concept presented through a premium SaaS dashboard view, campaign performance storytelling, and a clearer product-first interface direction.",
+      image: "/wapiuu-showcase-v1.png",
+      liveUrl: "https://wapiuu.com/en",
+      // TODO: Add the GitHub repository URL for this project.
+      // repoUrl: "https://github.com/your-username/wapiuu",
+      tags: ["SaaS", "Dashboard", "Automation", "Messaging UX"],
+    },
+    {
       title: "Aqualux",
       category: "Cleaning Products Store",
       description: "A professional cleaning products storefront focused on category clarity, visible trust signals, and a conversion-friendly shopping flow supported by fast delivery messaging.",
-      image: "/aqualux-showcase.svg",
+      image: "/aqualux-showcase-photoreal.png",
       liveUrl: "https://temizlik-zen-quyd.vercel.app/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/aqualux",

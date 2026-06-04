@@ -28,17 +28,34 @@ export const ProjectCard = ({
   liveUrl,
   repoUrl,
 }: ProjectCardProps) => {
+  const isSvgImage = Boolean(image?.toLowerCase().endsWith(".svg"));
+
   return (
     <motion.article initial={false} className="group relative flex h-full flex-col overflow-hidden">
       <div className={`relative aspect-[4/5] overflow-hidden bg-border md:aspect-square ${imageWrapperClassName ?? ""}`}>
         {image ? (
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            src={image}
-            alt={title}
-            className={`h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 ${imageClassName ?? ""}`}
-          />
+          isSvgImage ? (
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              className="h-full w-full"
+            >
+              <object
+                data={image}
+                type="image/svg+xml"
+                aria-label={title}
+                className={`pointer-events-none h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 ${imageClassName ?? ""}`}
+              />
+            </motion.div>
+          ) : (
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              src={image}
+              alt={title}
+              className={`h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 ${imageClassName ?? ""}`}
+            />
+          )
         ) : (
           <div className="flex h-full w-full items-end bg-gradient-to-br from-[#191919] via-[#2A2A2A] to-[#4A4A4A] p-6">
             <div>
