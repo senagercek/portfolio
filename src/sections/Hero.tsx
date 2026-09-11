@@ -50,7 +50,9 @@ export const Hero = () => {
             </Button>
             <a
               href={cvHref}
-              download
+              download="Senanur-Gercek-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-border px-8 py-4 text-sm font-medium uppercase tracking-[0.08em] text-foreground transition-all duration-300 hover:border-foreground hover:bg-foreground hover:text-background"
             >
               Download CV

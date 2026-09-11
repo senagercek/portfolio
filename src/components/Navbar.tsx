@@ -50,7 +50,9 @@ export const Navbar = () => {
           ))}
           <a
             href={cvHref}
-            download
+            download="Senanur-Gercek-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center border border-border px-5 py-3 text-[11px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-300 hover:border-foreground hover:bg-foreground hover:text-background"
           >
             Download CV
