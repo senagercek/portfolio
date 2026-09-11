@@ -10,7 +10,7 @@ export const Projects = () => {
       category: "Wellbeing Platform",
       description: "A wellness-focused web experience designed to present guided practices, calm visual storytelling, and a clean journey through mindful content and membership offers.",
       image: "/mindful.png",
-      liveUrl: "https://mindfuljourney.app/",
+      liveUrl: "https://mindful-journey-sigma.vercel.app/login",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/mindful-journey",
       tags: ["Next.js", "React", "Tailwind CSS", "REST API"],
@@ -20,7 +20,7 @@ export const Projects = () => {
       category: "Fashion Retail",
       description: "A premium fashion storefront created to elevate product presentation, support editorial merchandising, and deliver a refined shopping flow for a luxury-focused brand.",
       image: "/senora.png",
-      liveUrl: "https://www.senorast.com/",
+      liveUrl: "https://e-commerce-ten-weld-29.vercel.app/",
       // TODO: Add the GitHub repository URL for this project.
       // repoUrl: "https://github.com/your-username/senora-ecommerce",
       tags: ["React", "Next.js", "Tailwind CSS", "E-Commerce UI"],
